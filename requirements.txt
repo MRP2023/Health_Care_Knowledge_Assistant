@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sentence-transformers
+faiss-cpu
+python-multipart
+langdetect
+googletrans==4.0.0rc1
+pydantic
+numpy
+pytest

@@ -1,0 +1,37 @@
+# --- Python Specifics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environment ---
+# Assuming you named your environment 'venv' based on your folder structure
+venv/
+env/
+ENV/
+.env/
+
+# --- FAISS & Data ---
+# It is generally best practice to ignore large binary indices 
+# and potentially sensitive metadata/data files
+data/faiss_index/index.faiss
+data/faiss_index/metadata.pkl
+*.pkl
+
+# --- Environment Variables & Secrets ---
+# Never commit your API keys or configuration secrets!
+.env
+.secret
+config.local.py
+
+# --- IDE & OS Files ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+# If you are just starting with Docker, you might want to keep Dockerfile
+# but ignore ephemeral build artifacts if they appear in your local dir
